@@ -27,6 +27,8 @@ return require('packer').startup(function(use)
   use 'theprimeagen/harpoon'
   -- Undotree
   use 'mbbill/undotree'
+  -- Pug
+  use 'digitaltoad/vim-pug'
   -- Vim fugitive
   use 'tpope/vim-fugitive'
   use {
