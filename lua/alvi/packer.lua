@@ -23,9 +23,15 @@ return require('packer').startup(function(use)
   }
   -- Treesitter
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+  -- Plenary
+  use "nvim-lua/plenary.nvim"
   -- Harpoon
-  use 'theprimeagen/harpoon'
-  -- Undotree
+  use {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    requires = { { "nvim-lua/plenary.nvim" } }
+  }
+  -- Undotre
   use 'mbbill/undotree'
   -- Pug
   use 'digitaltoad/vim-pug'
